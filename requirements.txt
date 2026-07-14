@@ -1,0 +1,42 @@
+# Core
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+
+# LangChain
+langchain==0.3.27
+langchain-core==0.3.75
+langchain-community==0.3.29
+langchain-text-splitters==0.3.11
+langchain-qdrant==0.2.1
+langchain-huggingface==0.2.0
+
+# Hugging Face
+sentence-transformers
+transformers
+huggingface-hub
+accelerate
+
+# Vector DB
+qdrant-client==1.16.1
+
+# Documents
+pypdf
+python-docx
+
+# Config
+pydantic
+pydantic-settings
+python-dotenv
+
+# Logging
+structlog
+
+# HTTP
+httpx
+
+# Dataset
+datasets
+
+# Evaluation
+ragas==0.3.7
