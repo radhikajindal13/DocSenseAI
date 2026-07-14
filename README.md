@@ -114,15 +114,15 @@ graph LR
 ### Prerequisites
 
 - 🐍 Python 3.12+
-- 🔑 OpenAI API key ([Get one](https://platform.openai.com/api-keys))
-- 🗄️ Qdrant Cloud account ([Sign up](https://cloud.qdrant.io))
+- 🔑 HuggingFace API key
+- 🗄️ Qdrant Cloud account 
 
 ### 1️⃣ Clone & Install
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/rag-qa-project.git
-cd rag-qa-project
+git clone https://github.com/radhikajindal13/DocSenseAI.git
+cd DocSenseAI
 
 # Install with UV (recommended)
 uv sync
@@ -143,7 +143,7 @@ nano .env
 
 **Required variables:**
 ```bash
-OPENAI_API_KEY=sk-proj-your-key-here
+HF_TOKEN=your-key-here
 QDRANT_URL=https://your-cluster.qdrant.io
 QDRANT_API_KEY=your-qdrant-api-key
 ```
@@ -332,7 +332,7 @@ Add these secrets in: `Settings → Secrets and variables → Actions`
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `APP_RUNNER_ECR_ACCESS_ROLE_ARN`
-- `OPENAI_API_KEY`
+- `HF_TOKEN`
 - `QDRANT_URL`
 - `QDRANT_API_KEY`
 - `LANGCHAIN_API_KEY` (optional)
@@ -411,7 +411,7 @@ uv run mypy app/
 | Variable | Default | Description |
 |----------|---------|-------------|
 | **Required** |||
-| `OPENAI_API_KEY` | - | OpenAI API key |
+| `HF_TOKEN` | - | HuggingFace API Token |
 | `QDRANT_URL` | - | Qdrant Cloud URL |
 | `QDRANT_API_KEY` | - | Qdrant API key |
 | **Document Processing** |||
@@ -525,11 +525,11 @@ Deploys to AWS on push to `main`:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
+Here's how you can help:
 
 ### 🐛 Report Bugs
 
-Found a bug? [Open an issue](https://github.com/yourusername/rag-qa-project/issues) with:
+Found a bug? Open an issue with:
 - Clear description
 - Steps to reproduce
 - Expected vs actual behavior
@@ -537,7 +537,7 @@ Found a bug? [Open an issue](https://github.com/yourusername/rag-qa-project/issu
 
 ### 💡 Suggest Features
 
-Have an idea? [Create a feature request](https://github.com/yourusername/rag-qa-project/issues/new) with:
+Have an idea? Create a feature request with:
 - Use case description
 - Proposed solution
 - Alternative approaches considered
@@ -618,27 +618,24 @@ Built with amazing open-source tools:
 - 📊 [RAGAS](https://docs.ragas.io/) - RAG evaluation
 - 🔍 [LangSmith](https://smith.langchain.com/) - Observability
 
-Special thanks to all [contributors](https://github.com/yourusername/rag-qa-project/graphs/contributors)!
 
 ---
 
 ## 💬 Support
 
-- 📧 **Email**: your.email@example.com
-- 💬 **Issues**: [GitHub Issues](https://github.com/yourusername/rag-qa-project/issues)
-- 📖 **Documentation**: [Wiki](https://github.com/yourusername/rag-qa-project/wiki)
-- 🐦 **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+- 📧 **Email**: radhikajindal1329@gmail.com
+- 💬 **Issues**: [GitHub Issues](https://github.com/radhikajindal13/DocSenseAI/issues)
+- 📖 **Documentation**: [Wiki](https://github.com/radhikajindal13/DocSenseAI/wiki)
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repo if you find it helpful!
 
-**Made with ❤️ by the RAG Q&A Team**
+**Made with ❤️**
 
-[Report Bug](https://github.com/yourusername/rag-qa-project/issues) •
-[Request Feature](https://github.com/yourusername/rag-qa-project/issues) •
+[Report Bug](https://github.com/radhikajindal13/DocSenseAI/issues) •
+[Request Feature](https://github.com/radhikajindal13/DocSenseAI/issues) •
 [Contribute](CONTRIBUTING.md)
 
 </div>
